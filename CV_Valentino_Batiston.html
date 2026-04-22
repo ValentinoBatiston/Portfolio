@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Valentino Batiston</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #c41c3b 0%, #1a1a1a 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #c41c3b 0%, #1a1a1a 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .header-contact {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+        
+        .header-contact span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #c41c3b;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #c41c3b;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .section-content {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .info-block {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #c41c3b;
+        }
+        
+        .info-block h3 {
+            color: #c41c3b;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .info-block p {
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .virtud-item {
+            background: linear-gradient(135deg, #c41c3b 0%, #1a1a1a 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(196, 28, 59, 0.2);
+        }
+        
+        .proyecto-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #c41c3b;
+        }
+        
+        .proyecto-item h3 {
+            color: #c41c3b;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-contact {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+        
+        .datos-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .dato-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .dato-item:last-child {
+            border-bottom: none;
+        }
+        
+        .dato-label {
+            font-weight: 600;
+            color: #c41c3b;
+            font-size: 0.95em;
+        }
+        
+        .dato-valor {
+            color: #555;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Valentino Batiston</h1>
+            <p>Licenciado en Producción de Videojuegos y Entretenimiento Digital</p>
+            <div class="header-contact">
+                <span>📱 3493502697</span>
+                <span>✉️ valentino.batiston.lv@gmail.com</span>
+            </div>
+        </div>
+        
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="content">
+            
+            <!-- DATOS PERSONALES -->
+            <section class="section">
+                <h2 class="section-title">Datos Personales</h2>
+                <div class="section-content">
+                    <div class="info-block">
+                        <div class="datos-block">
+                            <div class="dato-item">
+                                <div class="dato-label">DNI:</div>
+                                <div class="dato-valor">47763469</div>
+                            </div>
+                            <div class="dato-item">
+                                <div class="dato-label">CUIL:</div>
+                                <div class="dato-valor">23477634699</div>
+                            </div>
+                            <div class="dato-item">
+                                <div class="dato-label">Sexo:</div>
+                                <div class="dato-valor">Masculino</div>
+                            </div>
+                            <div class="dato-item">
+                                <div class="dato-label">Teléfono:</div>
+                                <div class="dato-valor">3493502697</div>
+                            </div>
+                            <div class="dato-item">
+                                <div class="dato-label">Email:</div>
+                                <div class="dato-valor">valentino.batiston.lv@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FORMACIÓN ACADÉMICA -->
+            <section class="section">
+                <h2 class="section-title">Educación</h2>
+                <div class="section-content">
+                    <div class="info-block">
+                        <h3>🎓 Licenciatura en Producción de Videojuegos y Entretenimiento Digital</h3>
+                        <p><strong>Universidad Nacional de Río Cuarto (UNRaf)</strong></p>
+                        <p>Formación completa en desarrollo y producción de videojuegos, diseño digital y entretenimiento interactivo.</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>📚 Educación Secundaria - Especializado en Informática</h3>
+                        <p><strong>ICES EESOPA</strong></p>
+                        <p>Estudios secundarios con especialización en informática, proporcionando bases técnicas sólidas.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- PROYECTOS -->
+            <section class="section">
+                <h2 class="section-title">Proyectos</h2>
+                <div class="section-content">
+                    <div class="proyecto-item">
+                        <h3>🎮 La Venganza de las Ranas</h3>
+                        <p>Proyecto de desarrollo de videojuego en el cual participé aportando habilidades de programación, diseño y trabajo colaborativo.</p>
+                    </div>
+                    <div class="proyecto-item">
+                        <h3>🏔️ El Último Ascenso</h3>
+                        <p>Proyecto de producción audiovisual interactiva en el que contribuí con experiencia en entretenimiento digital y creación de contenido.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- IDIOMAS -->
+            <section class="section">
+                <h2 class="section-title">Idiomas</h2>
+                <div class="section-content">
+                    <div class="info-block">
+                        <h3>🌐 Inglés - Nivel Medio</h3>
+                        <p>Capacidad para comunicarse en inglés con fluidez moderada y comprensión general de textos técnicos.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- HABILIDADES TÉCNICAS -->
+            <section class="section">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-content">
+                    <div class="two-columns">
+                        <div class="virtud-item">💻 GDScript</div>
+                        <div class="virtud-item">🎨 Pixel Art</div>
+                        <div class="virtud-item">✏️ Arte Vectorial</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- VIRTUDES Y HABILIDADES -->
+            <section class="section">
+                <h2 class="section-title">Virtudes Profesionales</h2>
+                <div class="section-content">
+                    <div class="two-columns">
+                        <div class="virtud-item">✓ Adaptación</div>
+                        <div class="virtud-item">✓ Paciencia</div>
+                        <div class="virtud-item">✓ Respeto</div>
+                        <div class="virtud-item">✓ Trabajo Grupal</div>
+                        <div class="virtud-item">✓ Empatía</div>
+                        <div class="virtud-item">✓ Perseverancia</div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>&copy; 2026 Valentino Batiston | Curriculum Vitae</p>
+        </div>
+    </div>
+</body>
+</html>
